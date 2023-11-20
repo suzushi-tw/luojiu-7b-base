@@ -10,6 +10,21 @@ model-index:
   Train/loss: 1.3
 ---
 
+# 落九(Base): 繁體中文預訓練模型
+
+## 簡介
+**落九** 是一個繁體中文模型，Backbone為Llama2，雖然目前有許多開源的語言模型Base，但是部分Paper表明Llama2的學習速度比大部分語言模型快，
+且Hallucination(幻想)的指標僅落後於GPT和Llama2-70b。期待這個語言模型能越來越好!
+
+
+**落九**名稱來源於李白的《望廬山瀑布》：**飛流直下三千尺，疑是銀河落九天**。
+```text
+《望廬山瀑布》 
+ 唐.李白
+日照香爐生紫煙，遙看瀑布掛前川。
+飛流直下三千尺，疑是銀河落九天。
+```
+
 <!-- This model card has been generated automatically according to the information the Trainer had access to. You
 should probably proofread and complete it, then remove this comment. -->
 
@@ -19,8 +34,8 @@ should probably proofread and complete it, then remove this comment. -->
 
 # 訓練細節/Training Detail
 
-基於紅樓夢擴充的61388大詞表，後經過ＱＬｏｒａ和Ｓｈｏｒｔ　ｓｈｉｆｔ　Ａｔｔｅｎｔｉｏｎ訓練，僅使用一張Ａ１０顯卡。
-經過ｉｎｔ４量化和Ｌｏｒａ　Ｗｅｉｇｈｔ３２　訓練時大約使用１８ＧＢ記憶體。
+基於紅樓夢擴充的61388大詞表，後經過QLora和Short shift Attention訓練，僅使用一張Ａ１０顯卡。
+經過 int 4 量化和 Lora Weight 32訓練時大約使用１８ＧＢ記憶體。
 
 ## Model description
 
